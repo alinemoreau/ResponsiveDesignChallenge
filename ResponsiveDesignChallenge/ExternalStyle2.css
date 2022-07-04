@@ -1,34 +1,100 @@
 
-A:link {color: gray}
+A:link {color: rgb(255, 255, 255); text-decoration: none;}
 A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: teal}
 	
-Body {
+body{
 	background-color: white;
-	font-family: cambria;
-	color: gray	
+	font-family: 'Quicksand', sans-serif;
+	color: #fff1b8;
+	margin: 0;	
+	padding: 0;
+	background-image: url("fine-dining.png");
+}
+
+/* I don't know why but this is not working */
+div#about{
+	background-image: none;
+}
+
+.mynavbar a:hover {
+	background-color: #FFCC00;
+  }
+
+.mynavbar{
+	overflow: hidden;
+	background-color: white;
+}
+
+.mynavbar a {
+	float: left;
+	display: block;
+	color: green;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;
+ }
+
+
+
+H1 {font-size: 30pt; 
+	text-align: center;
+	font-family: 'Quicksand', sans-serif !important;
+}
+
+H2 {font-size: 25pt; 
+	text-align: center; 
+	font-style: normal;  
+	text-decoration: none; 
+	margin: 0; 
+	padding: 0;
+	pointer-events: none;}
+
+H3 {font-size: 10pt; 
+	text-align: center}
+
+H4 {text-align: center;
+	pointer-events: none;
+	color: white;
+	margin-block-end: 0em;}
+
+H5 {font-size: 15pt;
+	text-align: center;
+	pointer-events: none;
 	}
 
-H1 {font-size: 50pt; text-align: right}
-H2 {font-size: 25pt; text-align: right}
-H3 {font-size: 10pt; text-align: center}
-H4 {text-align: center}
-H5 {font-size: 15pt}
-
-P {font-size: 10pt; font-family: monospace}
+P {font-size: 13pt; 
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	}
 
 Table {
 	width: 400px; 
-	font-family: monospace; 
 	color: white; 
 	background-color: green;
 	margin: .8em;
-	border-color: darkgreen}
+	border-color: darkgreen;
+	margin-right: auto;
+	margin-left: auto;
+	}
 
 
 Form {
-	font-family: monospace; 
 	text-align: center; 
 	color: white; 
-	background-color: green}
+	outline: 5px dotted white;
+	}
 
+.toHome{
+	text-align: center;
+	font-size: larger;
+	font-weight: bold;
+	font-size: 50px;
+	color: white !important;
+}
+.toHome:hover>span{
+	background-color: #FFCC00;
+	outline-style: dashed;
+}
